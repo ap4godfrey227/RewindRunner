@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if(mouse_y <= obj_player.y)
+if(mouse_y <= (obj_player.y-96))
 {
 	if(mouse_x > obj_player.x)
 	{
