@@ -99,4 +99,35 @@ if(equipped_weapon == 0)
 	}
 }
 
+// Guitar
+if(equipped_weapon == 1)
+{
+	if(left_click)
+	{
+		instance_create_layer(x, y, "Instances", obj_e_note);
+	}
+}
+
+// Tuba
+if(equipped_weapon == 2)
+{
+	if(left_click)
+	{
+		instance_create_layer(x, y, "Instances", obj_w_note);
+	}
+}
+
+// Snare
+if(equipped_weapon == 3)
+{
+	if(left_click)
+	{
+		for(var i=0; i < 360; i += 45)
+		{
+			var inst = instance_create_layer(x, y, "Instances", obj_s_note);
+			inst.direction = i;
+		}
+	}
+}
+
 

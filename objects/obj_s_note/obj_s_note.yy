@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_q_note",
+  "%Name":"obj_s_note",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"obj_floor","path":"objects/obj_floor/obj_floor.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_q_note",
+  "name":"obj_s_note",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_q_note",
-    "path":"sprites/spr_q_note/spr_q_note.yy",
+    "name":"spr_s_note",
+    "path":"sprites/spr_s_note/spr_s_note.yy",
   },
   "spriteMaskId":null,
   "visible":true,
