@@ -6,8 +6,10 @@ key_jump = keyboard_check_pressed(vk_space);
 key_jump_held = keyboard_check(vk_space);
 key_right = keyboard_check(ord("D"));
 key_left = keyboard_check(ord("A"));
+left_click = mouse_check_button_pressed(mb_left);
 
 
+// ************MOVEMENT*****************
 
 // Move Left and Right
 var hmove = key_right - key_left;
@@ -72,5 +74,29 @@ else
 x += hsp;
 y += vsp;
 
+
+
+// ************WEAPONS*****************
+
+//Scroll to equip
+if(mouse_wheel_up())
+{
+	equipped_weapon = equipped_weapon - 1;
+	if(equipped_weapon == -1) {equipped_weapon = 3;}
+}
+if(mouse_wheel_down())
+{
+	equipped_weapon = (equipped_weapon + 1) % 4;
+}
+
+
+// Trumpet
+if(equipped_weapon == 0)
+{
+	if(left_click)
+	{
+		instance_create_layer(x, y, "Instances", obj_q_note);
+	}
+}
 
 
