@@ -15,3 +15,9 @@ vsp_max = 8;
 
 // WEAPONS
 equipped_weapon = 0; // 0 = Trumpet, 1 = guitar, 2 = tuba, 3 = snare
+can_fire_trumpet = 1;
+can_fire_guitar = 1;
+can_fire_tuba = 1;
+can_fire_snare = 60;
+snare_check = 1;
+

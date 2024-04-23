@@ -7,6 +7,7 @@ key_jump_held = keyboard_check(vk_space);
 key_right = keyboard_check(ord("D"));
 key_left = keyboard_check(ord("A"));
 left_click = mouse_check_button_pressed(mb_left);
+left_click_held = mouse_check_button(mb_left);
 
 
 // ************MOVEMENT*****************
@@ -93,40 +94,52 @@ if(mouse_wheel_down())
 // Trumpet
 if(equipped_weapon == 0)
 {
-	if(left_click)
+	if((left_click || left_click_held) && can_fire_trumpet)
 	{
 		instance_create_layer(x, y, "Instances", obj_q_note);
+		can_fire_trumpet = 0;
+		alarm_set(0, 60);
 	}
 }
 
 // Guitar
 if(equipped_weapon == 1)
 {
-	if(left_click)
+	if((left_click || left_click_held) && can_fire_guitar)
 	{
 		instance_create_layer(x, y, "Instances", obj_e_note);
+		can_fire_guitar = 0;
+		alarm_set(1, 30);
 	}
 }
 
 // Tuba
 if(equipped_weapon == 2)
 {
-	if(left_click)
+	if((left_click || left_click_held) && can_fire_tuba)
 	{
 		instance_create_layer(x, y, "Instances", obj_w_note);
+		can_fire_tuba = 0;
+		alarm_set(2, 240);
 	}
 }
 
 // Snare
 if(equipped_weapon == 3)
 {
-	if(left_click)
+	if(left_click_held && (can_fire_snare > 0))
 	{
-		for(var i=0; i < 360; i += 45)
+		for(var i=0; i < 360; i += 30)
 		{
 			var inst = instance_create_layer(x, y, "Instances", obj_s_note);
 			inst.direction = i;
 		}
+		can_fire_snare--;
+	}
+	if(can_fire_snare <= 0 && snare_check)
+	{
+		alarm_set(3, 600);
+		snare_check = 0;
 	}
 }
 
