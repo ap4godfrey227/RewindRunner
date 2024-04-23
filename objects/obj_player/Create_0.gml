@@ -20,4 +20,3 @@ can_fire_guitar = 1;
 can_fire_tuba = 1;
 can_fire_snare = 60;
 snare_check = 1;
-
