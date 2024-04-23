@@ -12,10 +12,10 @@ left_click = mouse_check_button_pressed(mb_left);
 // ************MOVEMENT*****************
 
 // Move Left and Right
-var hmove = key_right - key_left;
-if(hmove != 0)
+var is_moving_h = key_right - key_left;
+if(is_moving_h != 0)
 {
-	hsp = move_sp * hmove;
+	hsp = move_sp * is_moving_h;
 }
 else
 {
