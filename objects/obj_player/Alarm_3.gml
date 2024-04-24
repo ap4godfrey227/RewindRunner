@@ -3,5 +3,5 @@
 
 
 // Snare Fire rate
-can_fire_snare = 60;
+can_fire_snare = 30;
 snare_check = 1;
