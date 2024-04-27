@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_player",
-    "path":"sprites/spr_player/spr_player.yy",
+    "name":"spr_player_trumpet",
+    "path":"sprites/spr_player_trumpet/spr_player_trumpet.yy",
   },
   "spriteMaskId":null,
   "visible":true,
