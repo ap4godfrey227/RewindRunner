@@ -52,7 +52,6 @@
     {"id":{"name":"TitleScreen","path":"rooms/TitleScreen/TitleScreen.yy",},},
     {"id":{"name":"spr_e_note","path":"sprites/spr_e_note/spr_e_note.yy",},},
     {"id":{"name":"spr_floor","path":"sprites/spr_floor/spr_floor.yy",},},
-    {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
     {"id":{"name":"spr_q_note","path":"sprites/spr_q_note/spr_q_note.yy",},},
     {"id":{"name":"spr_s_note","path":"sprites/spr_s_note/spr_s_note.yy",},},
     {"id":{"name":"spr_scratch_throw","path":"sprites/spr_scratch_throw/spr_scratch_throw.yy",},},
