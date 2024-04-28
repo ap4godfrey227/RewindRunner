@@ -44,6 +44,7 @@
   },
   "name":"RewindRunner",
   "resources":[
+    {"id":{"name":"enemy_parent","path":"objects/enemy_parent/enemy_parent.yy",},},
     {"id":{"name":"obj_back_button","path":"objects/obj_back_button/obj_back_button.yy",},},
     {"id":{"name":"obj_controls_button","path":"objects/obj_controls_button/obj_controls_button.yy",},},
     {"id":{"name":"obj_debug","path":"objects/obj_debug/obj_debug.yy",},},
@@ -64,7 +65,7 @@
     {"id":{"name":"obj_tangle","path":"objects/obj_tangle/obj_tangle.yy",},},
     {"id":{"name":"obj_tape_reader","path":"objects/obj_tape_reader/obj_tape_reader.yy",},},
     {"id":{"name":"obj_w_note","path":"objects/obj_w_note/obj_w_note.yy",},},
-    {"id":{"name":"enemy_parent","path":"objects/enemy_parent/enemy_parent.yy",},},
+    {"id":{"name":"note_parent","path":"objects/note_parent/note_parent.yy",},},
     {"id":{"name":"temp","path":"objects/temp/temp.yy",},},
     {"id":{"name":"ControlsScreen","path":"rooms/ControlsScreen/ControlsScreen.yy",},},
     {"id":{"name":"HighScoreScreen","path":"rooms/HighScoreScreen/HighScoreScreen.yy",},},

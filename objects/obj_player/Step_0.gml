@@ -291,3 +291,16 @@ if(fastforward_cd >= 600)
 	fastforward_cd_regen = true;
 	is_fastforward = false;
 }
+
+
+
+// ************HEALTH*****************
+if(life_count <= 0)
+{
+	room_goto(LoseScreen);
+}
+if(hp <= 0)
+{
+	life_count--;
+	hp = 100;
+}

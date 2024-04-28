@@ -1,5 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-other.collided = true;
-hp = 0;
+obj_player.game_score += 100;

@@ -27,6 +27,7 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"enemy_parent","order":5,"path":"objects/enemy_parent/enemy_parent.yy",},
     {"name":"obj_back_button","order":4,"path":"objects/obj_back_button/obj_back_button.yy",},
     {"name":"obj_controls_button","order":5,"path":"objects/obj_controls_button/obj_controls_button.yy",},
     {"name":"obj_debug","order":2,"path":"objects/obj_debug/obj_debug.yy",},
@@ -43,7 +44,7 @@
     {"name":"obj_tangle","order":3,"path":"objects/obj_tangle/obj_tangle.yy",},
     {"name":"obj_tape_reader","order":17,"path":"objects/obj_tape_reader/obj_tape_reader.yy",},
     {"name":"obj_w_note","order":2,"path":"objects/obj_w_note/obj_w_note.yy",},
-    {"name":"enemy_parent","order":5,"path":"objects/enemy_parent/enemy_parent.yy",},
+    {"name":"note_parent","order":4,"path":"objects/note_parent/note_parent.yy",},
     {"name":"temp","order":15,"path":"objects/temp/temp.yy",},
     {"name":"ControlsScreen","order":8,"path":"rooms/ControlsScreen/ControlsScreen.yy",},
     {"name":"HighScoreScreen","order":2,"path":"rooms/HighScoreScreen/HighScoreScreen.yy",},
