@@ -8,6 +8,7 @@ key_right = keyboard_check(ord("D"));
 key_left = keyboard_check(ord("A"));
 left_click = mouse_check_button_pressed(mb_left);
 left_click_held = mouse_check_button(mb_left);
+crouch_held = keyboard_check(vk_shift);
 
 
 // ************MOVEMENT*****************
@@ -16,14 +17,34 @@ left_click_held = mouse_check_button(mb_left);
 var is_moving_h = key_right - key_left;
 if(is_moving_h != 0)
 {
+	if(is_moving_h == 1){prev_dir = 1;}
+	if(is_moving_h == -1){prev_dir = -1;}
 	hsp = move_sp * is_moving_h;
-	if(hsp >=0){sprite_index = sprite_arr[equipped_weapon];}
-	else{sprite_index = sprite_arr[equipped_weapon+4];}
+	if(hsp >=0)
+	{
+		if(!crouch_held){sprite_index = sprite_arr[equipped_weapon];}
+		else{sprite_index = sprite_arr[equipped_weapon+8];}
+	}
+	else
+	{
+		if(!crouch_held){sprite_index = sprite_arr[equipped_weapon+4];}
+		else{sprite_index = sprite_arr[equipped_weapon+12];}
+	}
 	image_speed = 1;
 }
 else
 {
 	hsp = 0;
+	if(prev_dir == 1)
+	{
+		if(!crouch_held){sprite_index = sprite_arr[equipped_weapon];}
+		else{sprite_index = sprite_arr[equipped_weapon+8];}
+	}
+	else
+	{
+		if(!crouch_held){sprite_index = sprite_arr[equipped_weapon+4];}
+		else{sprite_index = sprite_arr[equipped_weapon+12];}
+	}
 	image_speed = 0;
 	image_index = 0;
 }
@@ -105,8 +126,16 @@ if(equipped_weapon == 0)
 {
 	if((left_click || left_click_held) && can_fire_trumpet)
 	{
-		if(mouse_x >= obj_player.x){sprite_index = sprite_arr[equipped_weapon];}
-		else{sprite_index = sprite_arr[equipped_weapon+4];}
+		if(!crouch_held)
+		{
+			if(mouse_x >= obj_player.x){sprite_index = sprite_arr[equipped_weapon]; prev_dir = 1;}
+			else{sprite_index = sprite_arr[equipped_weapon+4]; prev_dir = -1;}
+		}
+		else
+		{
+			if(mouse_x >= obj_player.x){sprite_index = sprite_arr[equipped_weapon+8]; prev_dir = 1;}
+			else{sprite_index = sprite_arr[equipped_weapon+12]; prev_dir = -1;}
+		}
 		instance_create_layer(x, y, "Instances", obj_q_note);
 		can_fire_trumpet = 0;
 		alarm_set(0, 60);
@@ -118,8 +147,16 @@ if(equipped_weapon == 1)
 {
 	if((left_click || left_click_held) && can_fire_guitar)
 	{
-		if(mouse_x >= obj_player.x){sprite_index = sprite_arr[equipped_weapon];}
-		else{sprite_index = sprite_arr[equipped_weapon+4];}
+		if(!crouch_held)
+		{
+			if(mouse_x >= obj_player.x){sprite_index = sprite_arr[equipped_weapon]; prev_dir = 1;}
+			else{sprite_index = sprite_arr[equipped_weapon+4]; prev_dir = -1;}
+		}
+		else
+		{
+			if(mouse_x >= obj_player.x){sprite_index = sprite_arr[equipped_weapon+8]; prev_dir = 1;}
+			else{sprite_index = sprite_arr[equipped_weapon+12]; prev_dir = -1;}
+		}
 		instance_create_layer(x, y, "Instances", obj_e_note);
 		can_fire_guitar = 0;
 		alarm_set(1, 30);
@@ -131,8 +168,16 @@ if(equipped_weapon == 2)
 {
 	if((left_click || left_click_held) && can_fire_tuba)
 	{
-		if(mouse_x >= obj_player.x){sprite_index = sprite_arr[equipped_weapon];}
-		else{sprite_index = sprite_arr[equipped_weapon+4];}
+		if(!crouch_held)
+		{
+			if(mouse_x >= obj_player.x){sprite_index = sprite_arr[equipped_weapon]; prev_dir = 1;}
+			else{sprite_index = sprite_arr[equipped_weapon+4]; prev_dir = -1;}
+		}
+		else
+		{
+			if(mouse_x >= obj_player.x){sprite_index = sprite_arr[equipped_weapon+8]; prev_dir = 1;}
+			else{sprite_index = sprite_arr[equipped_weapon+12]; prev_dir = -1;}
+		}
 		instance_create_layer(x, y, "Instances", obj_w_note);
 		can_fire_tuba = 0;
 		alarm_set(2, 240);
@@ -144,8 +189,16 @@ if(equipped_weapon == 3)
 {
 	if(left_click_held && (can_fire_snare > 0))
 	{
-		if(mouse_x >= obj_player.x){sprite_index = sprite_arr[equipped_weapon];}
-		else{sprite_index = sprite_arr[equipped_weapon+4];}
+		if(!crouch_held)
+		{
+			if(mouse_x >= obj_player.x){sprite_index = sprite_arr[equipped_weapon]; prev_dir = 1;}
+			else{sprite_index = sprite_arr[equipped_weapon+4]; prev_dir = -1;}
+		}
+		else
+		{
+			if(mouse_x >= obj_player.x){sprite_index = sprite_arr[equipped_weapon+8]; prev_dir = 1;}
+			else{sprite_index = sprite_arr[equipped_weapon+12]; prev_dir = -1;}
+		}
 		for(var i=0; i < 360; i += 30)
 		{
 			var inst = instance_create_layer(x, y, "Instances", obj_s_note);

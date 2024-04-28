@@ -30,6 +30,15 @@ sprite_arr[4] = spr_player_trumpet_b;
 sprite_arr[5] = spr_player_guitar_b;
 sprite_arr[6] = spr_player_tuba_b;
 sprite_arr[7] = spr_player_snare_b;
+sprite_arr[8] = spr_player_trumpet_f_c;
+sprite_arr[9] = spr_player_guitar_f_c;
+sprite_arr[10] = spr_player_tuba_f_c;
+sprite_arr[11] = spr_player_snare_f_c;
+sprite_arr[12] = spr_player_trumpet_b_c;
+sprite_arr[13] = spr_player_guitar_b_c;
+sprite_arr[14] = spr_player_tuba_b_c;
+sprite_arr[15] = spr_player_snare_b_c;
 
 sprite_index = sprite_arr[0];
+prev_dir = 1;
 
