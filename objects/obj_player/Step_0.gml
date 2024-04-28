@@ -17,10 +17,15 @@ var is_moving_h = key_right - key_left;
 if(is_moving_h != 0)
 {
 	hsp = move_sp * is_moving_h;
+	if(hsp >=0){sprite_index = sprite_arr[equipped_weapon];}
+	else{sprite_index = sprite_arr[equipped_weapon+4];}
+	image_speed = 1;
 }
 else
 {
 	hsp = 0;
+	image_speed = 0;
+	image_index = 0;
 }
 
 
@@ -84,10 +89,14 @@ if(mouse_wheel_up())
 {
 	equipped_weapon = equipped_weapon - 1;
 	if(equipped_weapon == -1) {equipped_weapon = 3;}
+	if(hsp >=0){sprite_index = sprite_arr[equipped_weapon];}
+	else{sprite_index = sprite_arr[equipped_weapon+4];}
 }
 if(mouse_wheel_down())
 {
 	equipped_weapon = (equipped_weapon + 1) % 4;
+	if(hsp >=0){sprite_index = sprite_arr[equipped_weapon];}
+	else{sprite_index = sprite_arr[equipped_weapon+4];}
 }
 
 
@@ -96,6 +105,8 @@ if(equipped_weapon == 0)
 {
 	if((left_click || left_click_held) && can_fire_trumpet)
 	{
+		if(mouse_x >= obj_player.x){sprite_index = sprite_arr[equipped_weapon];}
+		else{sprite_index = sprite_arr[equipped_weapon+4];}
 		instance_create_layer(x, y, "Instances", obj_q_note);
 		can_fire_trumpet = 0;
 		alarm_set(0, 60);
@@ -107,6 +118,8 @@ if(equipped_weapon == 1)
 {
 	if((left_click || left_click_held) && can_fire_guitar)
 	{
+		if(mouse_x >= obj_player.x){sprite_index = sprite_arr[equipped_weapon];}
+		else{sprite_index = sprite_arr[equipped_weapon+4];}
 		instance_create_layer(x, y, "Instances", obj_e_note);
 		can_fire_guitar = 0;
 		alarm_set(1, 30);
@@ -118,6 +131,8 @@ if(equipped_weapon == 2)
 {
 	if((left_click || left_click_held) && can_fire_tuba)
 	{
+		if(mouse_x >= obj_player.x){sprite_index = sprite_arr[equipped_weapon];}
+		else{sprite_index = sprite_arr[equipped_weapon+4];}
 		instance_create_layer(x, y, "Instances", obj_w_note);
 		can_fire_tuba = 0;
 		alarm_set(2, 240);
@@ -129,6 +144,8 @@ if(equipped_weapon == 3)
 {
 	if(left_click_held && (can_fire_snare > 0))
 	{
+		if(mouse_x >= obj_player.x){sprite_index = sprite_arr[equipped_weapon];}
+		else{sprite_index = sprite_arr[equipped_weapon+4];}
 		for(var i=0; i < 360; i += 30)
 		{
 			var inst = instance_create_layer(x, y, "Instances", obj_s_note);

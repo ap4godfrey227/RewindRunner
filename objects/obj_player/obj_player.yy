@@ -34,7 +34,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_player_trumpet_f",
+    "path":"sprites/spr_player_trumpet_f/spr_player_trumpet_f.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
