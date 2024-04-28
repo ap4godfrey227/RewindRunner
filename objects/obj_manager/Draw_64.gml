@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+if((room == Level1) || (room == Level2) || (room == Level3)){
 draw_set_color(c_white);
 draw_text(375, 10, "Health:");
 draw_healthbar(455, 10, 911, 25, obj_player.hp, $FFFFFFFF, $FFFFFFFF, $FF00FF00, $FF0000FF, true, true);
@@ -29,3 +30,4 @@ draw_triangle(300, 116, 300, 176, 270, 146, true);
 
 draw_triangle(1066, 116, 1066, 176, 1096, 146, true);
 draw_triangle(1116, 116, 1116, 176, 1146, 146, true);
+}

@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_quit_button",
+  "%Name":"obj_controls_button",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_quit_button",
+  "name":"obj_controls_button",
   "overriddenProperties":[],
   "parent":{
     "name":"Menus",
@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_quit_button",
-    "path":"sprites/spr_quit_button/spr_quit_button.yy",
+    "name":"spr_controls_button",
+    "path":"sprites/spr_controls_button/spr_controls_button.yy",
   },
   "spriteMaskId":null,
   "visible":true,

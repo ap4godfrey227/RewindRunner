@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+if((room == Level1) || (room == Level2) || (room == Level3)){
 x += cam_speed;
 
 if(x < 638)
@@ -106,4 +106,5 @@ if(!obj_player.is_fastforward && is_fastforward_changed)
 		audio_sound_pitch(snd_level3, 1);
 		is_fastforward_changed = false;
 	}
+}
 }
