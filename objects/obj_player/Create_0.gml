@@ -42,3 +42,14 @@ sprite_arr[15] = spr_player_snare_b_c;
 sprite_index = sprite_arr[0];
 prev_dir = 1;
 
+// GUI
+life_count = 3;
+hp = 100;
+game_score = 0;
+
+
+// ABILITIES
+rewind_cd = 600;
+rewind_cd_regen = true;
+fastforward_cd = 600;
+fastforward_cd_regen = true;

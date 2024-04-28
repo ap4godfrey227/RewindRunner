@@ -9,6 +9,10 @@ key_left = keyboard_check(ord("A"));
 left_click = mouse_check_button_pressed(mb_left);
 left_click_held = mouse_check_button(mb_left);
 crouch_held = keyboard_check(vk_shift);
+rewind_held = keyboard_check(ord("S"));
+rewind_up = keyboard_check_released(ord("S"));
+fastforward_held = keyboard_check(ord("W"));
+fastforward_up = keyboard_check_released(ord("W"));
 
 
 // ************MOVEMENT*****************
@@ -214,3 +218,62 @@ if(equipped_weapon == 3)
 }
 
 
+
+
+// ************ABILITIES*****************
+
+// Rewind
+
+if(rewind_held && (rewind_cd >= 1) && rewind_cd_regen)
+{
+	obj_manager.cam_speed = -2;
+	rewind_cd -= 2;
+}
+else
+{
+	obj_manager.cam_speed = 1;
+	if(rewind_cd < 600){rewind_cd += 1;}
+}
+if(rewind_up)
+{
+	rewind_cd_regen = false;
+}
+if(!rewind_held && (rewind_cd <= 600))
+{
+	obj_manager.cam_speed = 1;
+	rewind_cd += 1;
+}
+if(rewind_cd >= 600)
+{
+	rewind_cd_regen = true;
+}
+
+
+// Fast Forward
+
+if(fastforward_held && (fastforward_cd >= 1) && fastforward_cd_regen)
+{
+	obj_manager.cam_speed = 8;
+	move_sp = 12;
+	fastforward_cd -= 2;
+}
+else
+{
+	if(!rewind_held){obj_manager.cam_speed = 1;}
+	move_sp = 4;
+	if(fastforward_cd < 600){fastforward_cd += 1;}
+}
+if(fastforward_up)
+{
+	fastforward_cd_regen = false;
+}
+if(!fastforward_held && (fastforward_cd <= 600))
+{
+	if(!rewind_held){obj_manager.cam_speed = 1;}
+	move_sp = 4;
+	fastforward_cd += 1;
+}
+if(fastforward_cd >= 600)
+{
+	fastforward_cd_regen = true;
+}
