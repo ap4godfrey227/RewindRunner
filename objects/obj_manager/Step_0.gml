@@ -13,8 +13,9 @@ if(x > 19362)
 	x = 19362;
 }
 
+// AUDIO
 
-if(obj_player.is_reversed && !is_changed)
+if(obj_player.is_reversed && !is_rewind_changed)
 {
 	if(room == Level1)
 	{
@@ -22,7 +23,7 @@ if(obj_player.is_reversed && !is_changed)
 		audio_stop_all();
 		audio_play_sound(snd_level1_reversed, 0, true);
 		audio_sound_set_track_position(snd_level1_reversed, level1_r_snd_length - prev_track_position);
-		is_changed = true;
+		is_rewind_changed = true;
 	}
 	if(room == Level2)
 	{
@@ -30,7 +31,7 @@ if(obj_player.is_reversed && !is_changed)
 		audio_stop_all();
 		audio_play_sound(snd_level2_reversed, 0, true);
 		audio_sound_set_track_position(snd_level2_reversed, level2_r_snd_length - prev_track_position);
-		is_changed = true;
+		is_rewind_changed = true;
 	}
 	if(room == Level3)
 	{
@@ -38,10 +39,10 @@ if(obj_player.is_reversed && !is_changed)
 		audio_stop_all();
 		audio_play_sound(snd_level3_reversed, 0, true);
 		audio_sound_set_track_position(snd_level3_reversed, level3_r_snd_length - prev_track_position);
-		is_changed = true;
+		is_rewind_changed = true;
 	}
 }
-if(!obj_player.is_reversed && is_changed)
+if(!obj_player.is_reversed && is_rewind_changed)
 {
 	if(room == Level1)
 	{
@@ -49,7 +50,7 @@ if(!obj_player.is_reversed && is_changed)
 		audio_stop_all();
 		audio_play_sound(snd_level1, 0, true);
 		audio_sound_set_track_position(snd_level1, level1_snd_length - prev_track_position);
-		is_changed = false;
+		is_rewind_changed = false;
 	}
 	if(room == Level2)
 	{
@@ -57,7 +58,7 @@ if(!obj_player.is_reversed && is_changed)
 		audio_stop_all();
 		audio_play_sound(snd_level2, 0, true);
 		audio_sound_set_track_position(snd_level2, level2_snd_length - prev_track_position);
-		is_changed = false;
+		is_rewind_changed = false;
 	}
 	if(room == Level3)
 	{
@@ -65,6 +66,44 @@ if(!obj_player.is_reversed && is_changed)
 		audio_stop_all();
 		audio_play_sound(snd_level3, 0, true);
 		audio_sound_set_track_position(snd_level3, level3_snd_length - prev_track_position);
-		is_changed = false;
+		is_rewind_changed = false;
+	}
+}
+
+
+if(obj_player.is_fastforward && !is_fastforward_changed)
+{
+	if(room == Level1)
+	{
+		audio_sound_pitch(snd_level1, 2);
+		is_fastforward_changed = true;
+	}
+	if(room == Level2)
+	{
+		audio_sound_pitch(snd_level2, 2);
+		is_fastforward_changed = true;
+	}
+	if(room == Level3)
+	{
+		audio_sound_pitch(snd_level3, 2);
+		is_fastforward_changed = true;
+	}
+}
+if(!obj_player.is_fastforward && is_fastforward_changed)
+{
+	if(room == Level1)
+	{
+		audio_sound_pitch(snd_level1, 1);
+		is_fastforward_changed = false;
+	}
+	if(room == Level2)
+	{
+		audio_sound_pitch(snd_level2, 1);
+		is_fastforward_changed = false;
+	}
+	if(room == Level3)
+	{
+		audio_sound_pitch(snd_level3, 1);
+		is_fastforward_changed = false;
 	}
 }

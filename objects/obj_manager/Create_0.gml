@@ -31,6 +31,7 @@ if(room == Level3)
 	audio_play_sound(snd_level3, 0, true);
 }
 
-is_changed = false;
+is_rewind_changed = false;
+is_fastforward_changed = false;
 
 prev_track_position = 0;
