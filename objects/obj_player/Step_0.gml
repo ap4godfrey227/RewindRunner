@@ -113,13 +113,17 @@ y += vsp;
 if(mouse_wheel_up())
 {
 	equipped_weapon = equipped_weapon - 1;
-	if(equipped_weapon == -1) {equipped_weapon = 3;}
+	if(equipped_weapon == -1 && (room == Level1)) {equipped_weapon = 1;}
+	if(equipped_weapon == -1 && (room == Level2)) {equipped_weapon = 2;}
+	if(equipped_weapon == -1 && (room == Level3)) {equipped_weapon = 3;}
 	if(hsp >=0){sprite_index = sprite_arr[equipped_weapon];}
 	else{sprite_index = sprite_arr[equipped_weapon+4];}
 }
 if(mouse_wheel_down())
 {
-	equipped_weapon = (equipped_weapon + 1) % 4;
+	if(room == Level1){equipped_weapon = (equipped_weapon + 1) % 2;}
+	if(room == Level2){equipped_weapon = (equipped_weapon + 1) % 3;}
+	if(room == Level3){equipped_weapon = (equipped_weapon + 1) % 4;}
 	if(hsp >=0){sprite_index = sprite_arr[equipped_weapon];}
 	else{sprite_index = sprite_arr[equipped_weapon+4];}
 }

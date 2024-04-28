@@ -16,8 +16,11 @@ level3_r_snd_length = audio_sound_length(snd_level3_reversed);
 
 if(room == TitleScreen)
 {
-	audio_stop_all();
-	audio_play_sound(snd_title, 0, true);
+	if(!audio_is_playing(snd_title))
+	{
+		audio_stop_all();
+		audio_play_sound(snd_title, 0, true);
+	}
 }
 if(room == Level1)
 {
