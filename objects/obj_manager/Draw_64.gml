@@ -24,8 +24,8 @@ draw_healthbar(160, 96, 360, 196, obj_player.rewind_cd/6, $FF7F7F7F, $FFFFFFFF, 
 draw_healthbar(1006, 96, 1206, 196, obj_player.fastforward_cd/6, $FF7F7F7F, $FFFFFFFF, $FF00FF00, $FF0000FF, true, true);
 
 draw_set_color(c_black);
-draw_triangle(250, 116, 250, 176, 226, 146, true);
-draw_triangle(300, 116, 300, 176, 276, 146, true);
+draw_triangle(250, 116, 250, 176, 220, 146, true);
+draw_triangle(300, 116, 300, 176, 270, 146, true);
 
 draw_triangle(1066, 116, 1066, 176, 1096, 146, true);
 draw_triangle(1116, 116, 1116, 176, 1146, 146, true);

@@ -228,24 +228,29 @@ if(rewind_held && (rewind_cd >= 1) && rewind_cd_regen)
 {
 	obj_manager.cam_speed = -2;
 	rewind_cd -= 2;
+	is_reversed = true;
 }
 else
 {
 	obj_manager.cam_speed = 1;
 	if(rewind_cd < 600){rewind_cd += 1;}
+	is_reversed = false;
 }
 if(rewind_up)
 {
 	rewind_cd_regen = false;
+	is_reversed = false;
 }
 if(!rewind_held && (rewind_cd <= 600))
 {
 	obj_manager.cam_speed = 1;
 	rewind_cd += 1;
+	is_reversed = false;
 }
 if(rewind_cd >= 600)
 {
 	rewind_cd_regen = true;
+	is_reversed = false;
 }
 
 
@@ -256,24 +261,29 @@ if(fastforward_held && (fastforward_cd >= 1) && fastforward_cd_regen)
 	obj_manager.cam_speed = 8;
 	move_sp = 12;
 	fastforward_cd -= 2;
+	is_fastforward = true;
 }
 else
 {
 	if(!rewind_held){obj_manager.cam_speed = 1;}
 	move_sp = 4;
 	if(fastforward_cd < 600){fastforward_cd += 1;}
+	is_fastforward = false;
 }
 if(fastforward_up)
 {
 	fastforward_cd_regen = false;
+	is_fastforward = false;
 }
 if(!fastforward_held && (fastforward_cd <= 600))
 {
 	if(!rewind_held){obj_manager.cam_speed = 1;}
 	move_sp = 4;
 	fastforward_cd += 1;
+	is_fastforward = false;
 }
 if(fastforward_cd >= 600)
 {
 	fastforward_cd_regen = true;
+	is_fastforward = false;
 }

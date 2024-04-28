@@ -53,3 +53,7 @@ rewind_cd = 600;
 rewind_cd_regen = true;
 fastforward_cd = 600;
 fastforward_cd_regen = true;
+
+// AUDIO
+is_reversed = false;
+is_fastforward = false;
