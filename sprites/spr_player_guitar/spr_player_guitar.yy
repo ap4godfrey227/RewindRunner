@@ -3,23 +3,30 @@
   "%Name":"spr_player_guitar",
   "bboxMode":0,
   "bbox_bottom":95,
-  "bbox_left":0,
-  "bbox_right":63,
-  "bbox_top":0,
+  "bbox_left":5,
+  "bbox_right":58,
+  "bbox_top":9,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"1fb7f826-47e1-4fe5-825b-554fc5e1eefb","name":"1fb7f826-47e1-4fe5-825b-554fc5e1eefb","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"84b3adb3-8239-4849-ae86-7f1366f6d4b6","name":"84b3adb3-8239-4849-ae86-7f1366f6d4b6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"f79f7199-66ea-4548-9d16-03cd6f7b3910","name":"f79f7199-66ea-4548-9d16-03cd6f7b3910","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"bfd4302d-22b8-4e0c-8057-0012e2fa4377","name":"bfd4302d-22b8-4e0c-8057-0012e2fa4377","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"aaceafce-a4a1-4043-9c73-cfa67aa6d776","name":"aaceafce-a4a1-4043-9c73-cfa67aa6d776","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"a1a4a377-dea1-46ba-a6b2-1696c59f93d3","name":"a1a4a377-dea1-46ba-a6b2-1696c59f93d3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"964ac85f-0626-4405-ba78-ac820497be8a","name":"964ac85f-0626-4405-ba78-ac820497be8a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"a5929698-03e0-4d4b-a168-7202ae51ba84","name":"a5929698-03e0-4d4b-a168-7202ae51ba84","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"450f024a-27ca-4781-a6f7-7f6790095dd8","name":"450f024a-27ca-4781-a6f7-7f6790095dd8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":96,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"c705119e-22dc-4b5c-8160-f477a59e3e5c","blendMode":0,"displayName":"default","isLocked":false,"name":"c705119e-22dc-4b5c-8160-f477a59e3e5c","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"c7fd8f66-696f-4823-a53e-46be4b27eea5","blendMode":0,"displayName":"default","isLocked":false,"name":"c7fd8f66-696f-4823-a53e-46be4b27eea5","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_player_guitar",
   "nineSlice":null,
@@ -49,7 +56,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":1.0,
+    "length":8.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -69,8 +76,29 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1fb7f826-47e1-4fe5-825b-554fc5e1eefb","path":"sprites/spr_player_guitar/spr_player_guitar.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"f17ddd30-a5d1-45a7-8c12-0abf3d5eeb9c","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"84b3adb3-8239-4849-ae86-7f1366f6d4b6","path":"sprites/spr_player_guitar/spr_player_guitar.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"7a21a10a-c802-4e43-893b-14cb49016889","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"f79f7199-66ea-4548-9d16-03cd6f7b3910","path":"sprites/spr_player_guitar/spr_player_guitar.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"37417451-abde-460f-96f7-015e7e2f04c1","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"bfd4302d-22b8-4e0c-8057-0012e2fa4377","path":"sprites/spr_player_guitar/spr_player_guitar.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"7db54f6a-ec90-49e5-bb3d-4918f1b5dd35","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"aaceafce-a4a1-4043-9c73-cfa67aa6d776","path":"sprites/spr_player_guitar/spr_player_guitar.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"6d8e80e6-3a7a-4940-9101-7eed091d8848","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a1a4a377-dea1-46ba-a6b2-1696c59f93d3","path":"sprites/spr_player_guitar/spr_player_guitar.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"ad4eb4f7-851a-4349-bf99-540fd51e18fd","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"964ac85f-0626-4405-ba78-ac820497be8a","path":"sprites/spr_player_guitar/spr_player_guitar.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"eaa9637e-72f9-4d69-b440-ba468df0cb23","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a5929698-03e0-4d4b-a168-7202ae51ba84","path":"sprites/spr_player_guitar/spr_player_guitar.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"889ff1b5-efa9-4e65-b3d1-8cebf0faa730","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"450f024a-27ca-4781-a6f7-7f6790095dd8","path":"sprites/spr_player_guitar/spr_player_guitar.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"6717a643-81f1-4c9b-82fd-edb1cbf6c7d8","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
