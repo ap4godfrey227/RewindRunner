@@ -1,18 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_tangle_throw",
+  "%Name":"enemy_parent",
   "eventList":[],
   "managed":true,
-  "name":"obj_tangle_throw",
+  "name":"enemy_parent",
   "overriddenProperties":[],
   "parent":{
     "name":"Enemy",
     "path":"folders/Objects/Enemy.yy",
   },
-  "parentObjectId":{
-    "name":"enemy_parent",
-    "path":"objects/enemy_parent/enemy_parent.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,10 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_tangle_throw",
-    "path":"sprites/spr_tangle_throw/spr_tangle_throw.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

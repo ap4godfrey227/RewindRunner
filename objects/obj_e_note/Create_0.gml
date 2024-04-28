@@ -36,3 +36,5 @@ else
 }
 
 speed = 32;
+damage = 7;
+collided = false;

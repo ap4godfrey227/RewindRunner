@@ -1,18 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_tangle_throw",
-  "eventList":[],
+  "%Name":"obj_tape_reader",
+  "eventList":[
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_tangle_throw",
+  "name":"obj_tape_reader",
   "overriddenProperties":[],
   "parent":{
-    "name":"Enemy",
-    "path":"folders/Objects/Enemy.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
-  "parentObjectId":{
-    "name":"enemy_parent",
-    "path":"objects/enemy_parent/enemy_parent.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_tangle_throw",
-    "path":"sprites/spr_tangle_throw/spr_tangle_throw.yy",
+    "name":"spr_tape_reader",
+    "path":"sprites/spr_tape_reader/spr_tape_reader.yy",
   },
   "spriteMaskId":null,
   "visible":true,
