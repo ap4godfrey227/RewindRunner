@@ -1,6 +1,6 @@
 {
   "$GMSprite":"",
-  "%Name":"scr_title_background",
+  "%Name":"scr_about_background",
   "bboxMode":0,
   "bbox_bottom":767,
   "bbox_left":0,
@@ -14,14 +14,14 @@
   "frames":[
     {"$GMSpriteFrame":"","%Name":"82152af4-8e91-4ecd-8bf4-d784e996e81d","name":"82152af4-8e91-4ecd-8bf4-d784e996e81d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
-  "gridX":0,
-  "gridY":0,
+  "gridX":32,
+  "gridY":32,
   "height":768,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"6ef6a97e-5726-4881-a0d9-ac76b65f09af","blendMode":0,"displayName":"default","isLocked":false,"name":"6ef6a97e-5726-4881-a0d9-ac76b65f09af","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"scr_title_background",
+  "name":"scr_about_background",
   "nineSlice":null,
   "origin":0,
   "parent":{
@@ -33,7 +33,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"",
-    "%Name":"scr_title_background",
+    "%Name":"scr_about_background",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -57,7 +57,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"scr_title_background",
+    "name":"scr_about_background",
     "playback":1,
     "playbackSpeed":30.0,
     "playbackSpeedType":0,
@@ -69,7 +69,7 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"82152af4-8e91-4ecd-8bf4-d784e996e81d","path":"sprites/scr_title_background/scr_title_background.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"82152af4-8e91-4ecd-8bf4-d784e996e81d","path":"sprites/scr_about_background/scr_about_background.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"8b46fdae-2a0e-4544-9f02-da1d496eacb5","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],

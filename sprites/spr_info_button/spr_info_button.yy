@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"TitleScreen",
-    "path":"folders/Sprites/TitleScreen.yy",
+    "name":"Screens",
+    "path":"folders/Sprites/Screens.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
