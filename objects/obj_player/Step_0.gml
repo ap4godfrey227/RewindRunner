@@ -146,6 +146,7 @@ if(equipped_weapon == 0)
 			else{sprite_index = sprite_arr[equipped_weapon+12]; prev_dir = -1;}
 		}
 		instance_create_layer(x, y, "Instances", obj_q_note);
+		audio_play_sound(snd_trumpet, 1, false);
 		can_fire_trumpet = 0;
 		alarm_set(0, 60);
 	}
@@ -167,6 +168,7 @@ if(equipped_weapon == 1)
 			else{sprite_index = sprite_arr[equipped_weapon+12]; prev_dir = -1;}
 		}
 		instance_create_layer(x, y, "Instances", obj_e_note);
+		audio_play_sound(snd_guitar, 1, false);
 		can_fire_guitar = 0;
 		alarm_set(1, 30);
 	}
@@ -188,6 +190,7 @@ if(equipped_weapon == 2)
 			else{sprite_index = sprite_arr[equipped_weapon+12]; prev_dir = -1;}
 		}
 		instance_create_layer(x, y, "Instances", obj_w_note);
+		audio_play_sound(snd_tuba, 1, false);
 		can_fire_tuba = 0;
 		alarm_set(2, 240);
 	}
@@ -213,10 +216,12 @@ if(equipped_weapon == 3)
 			var inst = instance_create_layer(x, y, "Instances", obj_s_note);
 			inst.direction = i;
 		}
+		if(can_fire_snare >= 30){audio_play_sound(snd_snare, 1, true);}
 		can_fire_snare--;
 	}
 	if(can_fire_snare <= 0 && snare_check)
 	{
+		audio_stop_sound(snd_snare);
 		alarm_set(3, 600);
 		snare_check = 0;
 	}
