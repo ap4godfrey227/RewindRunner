@@ -5,5 +5,6 @@
 
 obj_player.game_score -= 15;
 obj_player.hp -= 7;
+audio_play_sound(snd_hurt, 1, false);
 instance_destroy();
 	

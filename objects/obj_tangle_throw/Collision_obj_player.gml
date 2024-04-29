@@ -3,4 +3,5 @@
 
 
 obj_player.hp -= 30;
+audio_play_sound(snd_hurt, 1, false);
 instance_destroy();

@@ -308,8 +308,10 @@ if(life_count <= 0)
 if(hp <= 0)
 {
 	life_count--;
+	audio_play_sound(snd_life_lost, 1, false);
 	hp = 100;
 }
+
 
 info_keeper.player_life_count = life_count;
 info_keeper.player_hp = hp;

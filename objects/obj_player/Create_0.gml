@@ -56,6 +56,8 @@ else
 	game_score = info_keeper.player_score;
 }
 
+prev_hp = info_keeper.player_hp;
+
 
 // ABILITIES
 rewind_cd = 600;

@@ -5,6 +5,7 @@
 if(current_cooldown <= 0)
 {
 	obj_player.hp -= 5;
+	audio_play_sound(snd_hurt, 1, false);
 	current_cooldown = cooldown;
 }
 
