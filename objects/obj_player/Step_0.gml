@@ -107,6 +107,7 @@ y += vsp;
 
 
 
+
 // ************WEAPONS*****************
 
 //Scroll to equip
@@ -304,3 +305,10 @@ if(hp <= 0)
 	life_count--;
 	hp = 100;
 }
+
+info_keeper.player_life_count = life_count;
+info_keeper.player_hp = hp;
+info_keeper.player_score = game_score;
+life_count = info_keeper.player_life_count;
+hp = info_keeper.player_hp;
+game_score = info_keeper.player_score;

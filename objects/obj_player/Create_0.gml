@@ -43,9 +43,18 @@ sprite_index = sprite_arr[0];
 prev_dir = 1;
 
 // GUI
-life_count = 3;
-hp = 100;
-game_score = 0;
+if(room == Level1)
+{
+	life_count = 3;
+	hp = 100;
+	game_score = 0;
+}
+else
+{
+	life_count = info_keeper.player_life_count;
+	hp = info_keeper.player_hp;
+	game_score = info_keeper.player_score;
+}
 
 
 // ABILITIES
