@@ -10,3 +10,5 @@ player_col = false;
 should_throw = 0;
 attack_cd = 180;
 current_attack_cd = 180;
+
+image_speed = 0.5;

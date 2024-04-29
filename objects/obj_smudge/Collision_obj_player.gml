@@ -4,6 +4,6 @@
 //if(current_collision_cd >= collision_cd)
 
 obj_player.game_score -= 15;
-obj_player.hp -= 5;
+obj_player.hp -= 7;
 instance_destroy();
 	

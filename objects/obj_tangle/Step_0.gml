@@ -7,7 +7,8 @@ if(hp <= 0)
 	instance_destroy();
 }
 
-
+if(distance_to_object(obj_manager) < 683)
+{
 // ATTACK
 
 should_throw = floor(random_range(0, 100 + 1));
@@ -21,4 +22,5 @@ if((should_throw == 1) && (current_attack_cd >= attack_cd))
 if(current_attack_cd < attack_cd)
 {
 	current_attack_cd++;
+}
 }

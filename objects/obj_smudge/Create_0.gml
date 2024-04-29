@@ -14,7 +14,7 @@ move_cd = 60;
 
 hsp = 0;
 vsp = 0;
-move_sp = 1;
+move_sp = 2;
 is_grounded = 0;
 jump = -8;
 //jump_mod = 2.5;

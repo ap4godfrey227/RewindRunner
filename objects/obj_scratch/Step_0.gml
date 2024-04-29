@@ -7,6 +7,8 @@ if(hp <= 0)
 	instance_destroy();
 }
 
+if(distance_to_object(obj_manager) < 683)
+{
 // ATTACK
 
 should_throw = floor(random_range(0, 100 + 1));
@@ -58,20 +60,16 @@ if(current_move_cd <= (move_cd/2))
 vsp = clamp(vsp, -vsp_max, vsp_max);
 current_move_cd--;
 
-if(distance_to_object(obj_manager) < 683)
-{
-	hsp = 1;
+
+hsp = 1;
 should_move = floor(random_range(0, 100 + 1));
 
 if((should_move%10) == 0)
 {
 	hsp = -20;
 }
-}
-else
-{
-	hsp = -move_sp;
-}
+
 
 x += hsp;
 y += vsp;
+}

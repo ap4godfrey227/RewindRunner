@@ -6,7 +6,8 @@ if(hp <= 0)
 	instance_destroy();
 }
 
-
+if(distance_to_object(obj_manager) < 683)
+{
 if(current_move_cd <= 0)
 {
 	hsp = -1 * move_sp;
@@ -58,3 +59,4 @@ else{image_speed = 0;}
 
 x += hsp;
 y += vsp;
+}

@@ -3,7 +3,7 @@
 if((room == Level1) || (room == Level2) || (room == Level3)){
 draw_set_color(c_white);
 draw_text(375, 10, "Health:");
-draw_healthbar(455, 10, 911, 25, obj_player.hp, $FFFFFFFF, $FFFFFFFF, $FF00FF00, $FF0000FF, true, true);
+draw_healthbar(455, 10, 911, 25, obj_player.hp, $FF4C4C4C, $FF0000FF, $FF00FF00, $FF0000FF, true, true);
 
 
 //draw lives
@@ -21,8 +21,8 @@ for(var life_count = obj_player.life_count; life_count > 0; --life_count) {
 draw_set_color(c_white);
 draw_text(1070, 10, "Score: " + string(obj_player.game_score));
 
-draw_healthbar(160, 96, 360, 196, obj_player.rewind_cd/6, $FF7F7F7F, $FFFFFFFF, $FF00FF00, $FF0000FF, true, true);
-draw_healthbar(1006, 96, 1206, 196, obj_player.fastforward_cd/6, $FF7F7F7F, $FFFFFFFF, $FF00FF00, $FF0000FF, true, true);
+draw_healthbar(160, 96, 360, 196, obj_player.rewind_cd/6, $FF4C4C4C, $FF0000FF, $FF00FF00, $FF0000FF, true, true);
+draw_healthbar(1006, 96, 1206, 196, obj_player.fastforward_cd/6, $FF4C4C4C, $FF0000FF, $FF00FF00, $FF0000FF, true, true);
 
 draw_set_color(c_black);
 draw_triangle(250, 116, 250, 176, 220, 146, true);

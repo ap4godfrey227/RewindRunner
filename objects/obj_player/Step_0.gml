@@ -59,12 +59,12 @@ if((key_jump == 1) && (is_grounded == 1))
 {
 	vsp += jump;
 }
-/* Variable jump
+//Variable jump
 if((vsp < 0) && (!key_jump_held))
 {
 	vsp = max(vsp, jump / jump_mod);
 }
-*/
+
 
 
 // Gravity
@@ -167,7 +167,7 @@ if(equipped_weapon == 1)
 			if(mouse_x >= obj_player.x){sprite_index = sprite_arr[equipped_weapon+8]; prev_dir = 1;}
 			else{sprite_index = sprite_arr[equipped_weapon+12]; prev_dir = -1;}
 		}
-		instance_create_layer(x, y, "Instances", obj_e_note);
+		instance_create_layer(x, y+40, "Instances", obj_e_note);
 		audio_play_sound(snd_guitar, 1, false);
 		can_fire_guitar = 0;
 		alarm_set(1, 30);
@@ -213,7 +213,7 @@ if(equipped_weapon == 3)
 		}
 		for(var i=0; i < 360; i += 30)
 		{
-			var inst = instance_create_layer(x, y, "Instances", obj_s_note);
+			var inst = instance_create_layer(x, y+40, "Instances", obj_s_note);
 			inst.direction = i;
 		}
 		if(can_fire_snare >= 30){audio_play_sound(snd_snare, 1, true);}
